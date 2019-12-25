@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Скорость по Х:"
+        android:layout_height="46.5dp"
+        android:layout_marginLeft="50.0dp"
+        android:layout_width="174.5dp"
+        android:textColor="#ff131cf7"
+        android:textSize="25sp"
+        android:id="@+id/textView1" />
+    <TextView
+        android:text="Скорость по Y:"
+        android:layout_height="46.5dp"
+        android:layout_width="174.5dp"
+        android:layout_marginLeft="50.0dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:id="@+id/textView2" />
+    <TextView
+        android:text="Скорость по Z:"
+        android:layout_height="45.5dp"
+        android:layout_width="174.5dp"
+        android:layout_marginLeft="50.0dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/textView3" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71.5dp"
+        android:progressBackgroundTint="@android:color/black"
+        android:id="@+id/progressBar1" />
+    <TextView
+        android:text="Расстояние по Х:"
+        android:layout_width="200.0dp"
+        android:layout_height="39.5dp"
+        android:textColor="#ff131cf7"
+        android:layout_marginLeft="50.0dp"
+        android:textSize="25sp"
+        android:id="@+id/textView4" />
+    <TextView
+        android:text="Расстояние по Y:"
+        android:layout_width="200.0dp"
+        android:layout_height="39.5dp"
+        android:layout_marginLeft="50.0dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="25sp"
+        android:id="@+id/textView5" />
+    <TextView
+        android:text="Расстояние по Z:"
+        android:layout_width="200.5dp"
+        android:layout_height="39.5dp"
+        android:layout_marginLeft="50.0dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        android:id="@+id/textView6" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="90.5dp"
+        android:id="@+id/scrollView1"
+        android:layout_marginBottom="40.5dp">
+        <Button
+            android:text="Back"
+            android:textSize="24sp"
+            android:layout_marginLeft="15.0dp"
+            android:layout_height="match_parent"
+            android:layout_width="300sp"
+            android:background="@android:color/holo_blue_bright"
+            android:id="@+id/buttonback"/>
+    </ScrollView>
+</LinearLayout>
