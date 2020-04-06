@@ -61,7 +61,7 @@ namespace App3
             start.Click += delegate (object sender, EventArgs e)//
               {
                 //  textch.Text = "Идет снятие показаний...";
-                  start.Text = "Cнятие показаний...";             
+                  start.Text = "Running...";             
               };
            
             stop.Click += delegate (object sender, EventArgs e)//new
