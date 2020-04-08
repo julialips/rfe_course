@@ -8,12 +8,15 @@ using Android.Hardware;
 using Context = Android.Content.Context;
 using System.Linq;
 using Android.Content;
+//using ZedGraph;
+
 
 namespace App3
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
      public class MainActivity : AppCompatActivity, ISensorEventListener
     {
+        
         double dt; // отрезое между снятіем ускоренія в 2 точках
         double allt;//все время 
         long lasttime;
@@ -36,6 +39,10 @@ namespace App3
         private TextView vy;
         private TextView vz;
 
+        private TextView drx;
+        private TextView dry;
+        private TextView drz;
+
         //  private TextView textch;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -49,9 +56,16 @@ namespace App3
             yView = (TextView)FindViewById(Resource.Id.textView5);  // текстовые поля для вывода показаний
             zView = (TextView)FindViewById(Resource.Id.textView6);  //
 
-            vx= (TextView)FindViewById(Resource.Id.textView10);
+            vx = (TextView)FindViewById(Resource.Id.textView10);
             vy = (TextView)FindViewById(Resource.Id.textView11);
             vz = (TextView)FindViewById(Resource.Id.textView12);
+
+            drx = (TextView)FindViewById(Resource.Id.textView14);
+            dry = (TextView)FindViewById(Resource.Id.textView22);
+            drz = (TextView)FindViewById(Resource.Id.textView24);
+
+
+
 
             start = FindViewById<Button>(Resource.Id.button11);//Инициализация кнопки старт
             stop = FindViewById<Button>(Resource.Id.button2);//Инициализация кнопки стоп
@@ -163,20 +177,26 @@ namespace App3
             vy.Text = (v[1]).ToString();
             vz.Text = (v[2]).ToString();
 
+            drx.Text = (dr[0]).ToString();
+            dry.Text = (dr[1]).ToString();
+            drz.Text = (dr[2]).ToString();
 
-          //  vx.Text = (accelData[0]).ToString();
+            //
+           // Chart myChart = new Chart();
+            //GraphPane pane = zedGraph.GraphPane;
 
         }
        
-        //int c;
- 
-       /* private void Button1_Click(object sender, EventArgs e)//для стоп
-        {
-            c++;
-            stop.Text = Convert.ToString(c);
-         
-        }*/
-        public void OnAccuracyChanged(Sensor sensor, [GeneratedEnum] SensorStatus accuracy)
+
+                //int c;
+
+                /* private void Button1_Click(object sender, EventArgs e)//для стоп
+                 {
+                     c++;
+                     stop.Text = Convert.ToString(c);
+
+                 }*/
+                public void OnAccuracyChanged(Sensor sensor, [GeneratedEnum] SensorStatus accuracy)
         {
         }
 
