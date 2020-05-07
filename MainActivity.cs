@@ -12,6 +12,7 @@ using Android.Content;
 //
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Essentials;
 //
 
 
@@ -201,18 +202,27 @@ namespace App3
             drx.Text = (dr[0]).ToString();
             dry.Text = (dr[1]).ToString();
             drz.Text = (dr[2]).ToString();
+            // 06.05
+            MadgwickAHRS madgwick = new MadgwickAHRS(1f / 256f);
+            madgwick.Update(deg2rad(giroscopeData[0]), deg2rad(giroscopeData[1]), deg2rad(giroscopeData[2]), accelData[0], accelData[1], accelData[2]);
+            
+
+            static float deg2rad(float degrees)//преобразование кватерионов в углы эйлера
+            {
+                return (float)(Math.PI / 180) * degrees;
+            }
+            //06.05
         }
-       
-            public void OnAccuracyChanged(Sensor sensor, [GeneratedEnum] SensorStatus accuracy)
+
+        public void OnAccuracyChanged(Sensor sensor, [GeneratedEnum] SensorStatus accuracy)
         { }
 
         // new code 05.05
         //
         //
-        //
-        //
         public class MadgwickAHRS
         {
+         
             /// <summary>
             /// Gets or sets the sample period.
             /// </summary>
@@ -470,7 +480,7 @@ namespace App3
         }
 
         //
-        //
+        //05.05
         //
         //
 
