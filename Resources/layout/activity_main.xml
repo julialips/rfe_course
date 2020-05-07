@@ -7,7 +7,7 @@
     android:background="@drawable/gradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-     <LinearLayout
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
@@ -29,8 +29,8 @@
             android:textColor="#000000"
             android:id="@+id/textView4"
             android:textSize="23dp"/>
-        </LinearLayout>
-      <LinearLayout
+    </LinearLayout>
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
@@ -48,11 +48,11 @@
             android:inputType="number|numberDecimal"
             android:layout_width="296.0dp"
             android:layout_height="30.0dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:id="@+id/textView5"
             android:textSize="23dp"
        />
-     </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -71,15 +71,15 @@
             android:inputType="number|numberDecimal"
             android:layout_width="296.0dp"
             android:layout_height="30.0dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:id="@+id/textView6"
             android:textSize="23dp"/>
-     </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
-      <Button
+        <Button
             android:text="Set 0"
             android:layout_width="150.0dp"
             android:textSize="24sp"
@@ -87,16 +87,16 @@
             android:id="@+id/button11"
             android:background="@android:color/holo_blue_bright"
             android:layout_marginLeft="10.0dp"/>
-      <Button
-        android:text="Reset"
-        android:textSize="24sp"
-        android:layout_width="150.0dp"
-        android:layout_height="35.5dp"
-        android:id="@+id/button2"
-        android:background="@android:color/holo_blue_bright"
-        android:layout_marginLeft="5.0dp" />
-      </LinearLayout>
-     <Button
+        <Button
+            android:text="Reset"
+            android:textSize="24sp"
+            android:layout_width="150.0dp"
+            android:layout_height="35.5dp"
+            android:id="@+id/button2"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginLeft="5.0dp" />
+    </LinearLayout>
+    <Button
         android:text="Show information"
         android:textSize="24sp"
         android:layout_marginLeft="10.0dp"
@@ -104,7 +104,7 @@
         android:layout_width="305.0dp"
         android:background="@android:color/holo_blue_dark"
         android:id="@+id/button12" />
-     <LinearLayout
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
@@ -124,121 +124,144 @@
             android:layout_width="253.5dp"
             android:layout_height="34.0dp"
             android:textSize="20dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:id="@+id/textView10"
             android:layout_toRightOf="@id/textView7" />
     </LinearLayout>
-     <LinearLayout
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
-      <TextView
-        android:text="vY:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp"
-        android:layout_marginLeft="10.0dp"
-        android:id="@+id/textView8"
-        android:layout_below="@id/textView7" />
+        <TextView
+            android:text="vY:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:layout_marginLeft="10.0dp"
+            android:id="@+id/textView8"
+            android:layout_below="@id/textView7" />
         <TextView
             android:text="   "
             android:layout_width="255.5dp"
             android:layout_height="34.0dp"
             android:textSize="20dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:id="@+id/textView11"
             android:layout_toRightOf="@id/textView8"
             android:layout_below="@id/textView10" />
-      </LinearLayout>
-     <LinearLayout
+    </LinearLayout>
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
-      <TextView
-        android:text="vZ:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="24sp"
-        android:layout_marginLeft="10.0dp"
-        android:id="@+id/textView9"
-        android:layout_below="@id/textView8"
-        android:layout_above="@id/textView13" />
+        <TextView
+            android:text="vZ:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:layout_marginLeft="10.0dp"
+            android:id="@+id/textView9"
+            android:layout_below="@id/textView8"
+            android:layout_above="@id/textView13" />
         <TextView
             android:text="   "
             android:layout_width="247.5dp"
             android:layout_height="34.5dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:textSize="20dp"
             android:id="@+id/textView12"
             android:layout_below="@id/textView11"
             android:layout_toRightOf="@id/textView9" />
-       </LinearLayout>
-     <LinearLayout
+    </LinearLayout>
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
-       <TextView
-        android:text="X:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView9"
-        android:id="@+id/textView13"
-        android:textColor="#ff131cf7"
-        android:textSize="24sp"
-        android:layout_marginLeft="10.0dp"
-        android:layout_toRightOf="@id/textView13" />
+        <TextView
+            android:text="X:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView9"
+            android:id="@+id/textView13"
+            android:textColor="#ff131cf7"
+            android:textSize="24sp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toRightOf="@id/textView13" />
         <TextView
             android:text=" "
             android:layout_width="260.0dp"
             android:layout_height="32.5dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:textSize="20dp"
             android:layout_toRightOf="@id/textView13"
             android:id="@+id/textView14"
             android:layout_below="@id/textView12" />
-      </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
-      <TextView
-        android:text="Y:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10.0dp"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp"
-        android:id="@+id/textView15" />
+        <TextView
+            android:text="Y:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:id="@+id/textView15" />
         <TextView
             android:text=" "
             android:layout_width="231.5dp"
             android:layout_height="32.5dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:textSize="20dp"
             android:layout_toRightOf="@id/textView13"
             android:id="@+id/textView22"
             android:layout_below="@id/textView15" />
-     </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="35dp">
-    <TextView
-        android:text="Z:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10.0dp"
-        android:textSize="24sp"
-        android:textColor="@android:color/holo_red_dark"
-        android:id="@+id/textView23" />
+        <TextView
+            android:text="Z:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/textView23" />
         <TextView
             android:text=" "
             android:layout_width="243.0dp"
             android:layout_height="32.5dp"
             android:textSize="20dp"
-             android:textColor="#000000"
+            android:textColor="#000000"
             android:id="@+id/textView24" />
-        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:text=" Quarerion: "
+            android:layout_width="117.5dp"
+            android:layout_height="34.0dp"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:id="@+id/textView_Quaterion"
+            android:layout_marginRight="0.0dp" 
+      />
+        <TextView
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="30.5dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/textView_Value_Quaterion" 
+      />
+     </LinearLayout>
 </LinearLayout>
